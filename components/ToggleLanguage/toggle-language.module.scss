@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+
+.toggle{
+  color : $primary-color;
+  .lang{
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+}

@@ -1,0 +1,76 @@
+@import '../../styles/_mixins-text.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/_variables.scss';
+
+.imageFixed {
+  display: block;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+
+  .image {
+    position: relative;
+    width: 100%;
+    margin-left: 29px;
+    margin-bottom: -130px;
+    margin-top: 48px;
+    &::after {
+      @include line();
+      width: 100px;
+      height: 20px;
+      right: 108px;
+      transform: translate(20px,-120px) rotate(-45deg);
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    background-color: $secondary-color;
+    width: 314px;
+    height: 395px;
+    align-content: center;
+    padding: 0 29px;
+
+    h1 {
+      @include title-h3();
+      color: $white;
+      padding-top: 141px;
+      margin-bottom: 0px;
+     
+    }
+
+    h2 {
+      @include text-medium();
+      color: $primary-color;
+    }
+
+    p {
+      font-family: 'Barlow-Regular';
+      font-style: italic;
+      color: $white;
+      line-height: 22px;
+    }
+
+    a{
+      display: block;
+      width: 30px;
+    }
+
+  }
+}

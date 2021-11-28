@@ -1,0 +1,138 @@
+{
+  "page-title": "Rool | Optimiser la gestion des pneumatiques",
+  "meta-description" : "Faciliter la maintenance des véhicules en optimisant la gestion des pneumatiques",
+  "header": {
+    "diagnostic": "Notre diagnostic ",
+    "solution": "Notre solution",
+    "how-it-works": "Comment ça marche\u00a0?",
+    "clients": "Nos clients",
+    "rool": "Choisir ROOL",
+    "team": "L’équipe"
+  },
+  "title": "Faciliter la maintenance des véhicules\nen optimisant la gestion des pneumatiques",
+  "text": "Grâce à une intelligence artificielle de reconnaissance d'image.",
+  "diagnostic": [
+    {
+      "content": "<0>des clients ne savent pas <1>quand ils doivent changer leur pneus</1> et n'en connaissent pas la référence (type Shazam)</0>",
+      "source": "Source Manufacturiers / Expérience client"
+    },
+    {
+      "content": "<0>Il n’existe pas de <1>plateforme digitale commune</1> afin de prendre rendez-vous avec un prestataire de services dans l’après-vente automobile (type Doctolib)</0>",
+      "source": "Source Rool Analysts / Expérience client"
+    },
+    {
+      "content": "<0>Pour <2>60%</2> des automobilistes, l’expérience client en terme de changement de pneus est <1>déceptive</1></0>",
+      "source": "Source Etude Shoppers Manufacturier 2020 / Expérience client"
+    }
+  ],
+  "solution": [
+    {
+      "title": "Améliorer l’expérience du changement de pneumatique pour les automobilistes"
+    },
+    {
+      "image": "detection.svg",
+      "title": "Détection d'usure",
+      "subtitle": "Détecter la référence exacte du pneumatique et son niveau d’usure par une IA de reconnaissance d’images"
+    },
+    {
+      "image": "parcours.svg",
+      "title": "Parcours client digital",
+      "subtitle": "Alerter l'utilisateur en cas d'usure et lui permettre de prendre rendez-vous facilement sur l'application avec des prestataires géolocalisés"
+    },
+    {
+      "image": "maintenance.svg",
+      "title": "Maintenance prédictive",
+      "subtitle": "Grâce à l'agrégation de données sur l'usure et les véhicules, permettre d'anticiper la maintenance des véhicules"
+    }
+  ],
+  "clients": [
+    {
+      "image": "loueurs.svg",
+      "subtitle": "Les loueurs longue durée",
+      "text": "... pour complèter et enrichir leur offre de service sur la maintenance du véhicule"
+    },
+    {
+      "image": "gestionnaires.svg",
+      "subtitle": "Les gestionnaires de flottes",
+      "text": "... pour améliorer la performance opérationnelle de la gestion de flotte et le service aux clients"
+    },
+    {
+      "image": "concessions.svg",
+      "subtitle": "Les concessions automobiles",
+      "text": " ... afin de fidéliser la clientèle de véhicules neufs et d'occasion"
+    }
+  ],
+  "title-reasons" : "5 raisons de choisir ROOL",
+  "reasons": [
+    {
+      "image": "round1.svg",
+      "title" : "Optimisation des coûts\u00a0: ",
+      "text": "Connaissance exacte des références des pneumatiques et prévision de rotation plus précise"
+    },
+    {
+      "image": "round2.svg",
+      "title": "Marge additionnelle\u00a0: ",
+      "text": "Expérience client enrichie permettant d'augmenter la pénétration des contrats pneumatiques"
+    },
+    {
+      "image": "round3.svg",
+      "title": "Services clients\u00a0: ",
+      "text": "Optimisation de la charge de travail du poste de gestionnaire de flottes de la société cliente"
+    },
+    {
+      "image": "round4.svg",
+      "title": "Efficacité opérationnelle\u00a0: ",
+      "text": "Baisse des tâches transactionnelles à faible valeur ajoutée"
+    },
+    {
+      "image": "round5.svg",
+      "title": "Fidélisation\u00a0: ",
+      "text": "Augmentation de la rétention client grâce à une expérience client enrichie"
+    }
+  ],
+  "team-partner" : "Nos partenaires",
+  "teams": [
+    {
+      "image": "jeandenis.png",
+      "name": "Jean-Denis",
+      "title": "CEO et fondateur",
+      "content": "“Après 20 ans dans l’industrie et la distribution de pneumatiques, l’envie de créer de la valeur en partant d’une meilleure expérience client sur l’après-vente automobile m’a amené à développer le concept de Rool”",
+      "linkedin": "https://fr.linkedin.com/in/jeandenis-perche"
+    },
+    {
+      "image": "ivan.jpg",
+      "name": "Ivan",
+      "title": "CPO et fondateur",
+      "content": "“J’apporte mon expertise a Rool pour améliorer l’expérience de maintenance des véhicules grâce à mes compétences en IA et création produit”",
+      "linkedin": "https://fr.linkedin.com/in/ivanlellouchfreelance"
+    }
+  ],
+  "howitworks": [
+    {
+      "title": "Téléchargement",
+      "text": "Je télécharge Rool à la remise du véhicule"
+    },
+    {
+      "title": "Photo",
+      "text": "Je prends mes pneus en photo pour détection automatique des références par reconnaissance d'images"
+    },
+    {
+      "title": "Notification",
+      "text": "Je suis alerté que je dois contrôler l'usure de mes pneus par prise de photo"
+    },
+    {
+      "title": "Rendez-vous",
+      "text": "En cas d'usure détectée par l'IA de Rool, je suis notifié et je prends RDV sur l'app"
+    },
+    {
+      "title": "Informations",
+      "text": "L'information est partagée entre tous les acteurs, le loueur longue durée, le garage et l'utilisateur"
+    }
+  ],
+  "footer": {
+    "title": "Contact",
+    "send-email": "Envoyer un email",
+    "phone": "+33 6 07 23 80 97",
+    "email": "contact@my-rool.com"
+  }
+}

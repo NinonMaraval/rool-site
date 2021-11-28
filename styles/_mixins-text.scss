@@ -1,0 +1,57 @@
+@import './variables';
+
+@mixin title-h1 {
+  font-family: 'Barlow-Bold';
+  font-size: $title-h1;
+  font-weight: normal;
+  color: $white;
+}
+
+@mixin title-h2 {
+  font-family: 'Barlow-ExtraBold';
+  font-size: $title-h2;
+  font-weight: normal;
+  color: $title-color;
+}
+
+@mixin title-h3 {
+  font-family: 'Barlow-Bold';
+  font-size: $title-h3;
+  font-weight: normal;
+  color: $title-color;
+}
+
+@mixin title-h4 {
+  font-family: 'Roboto-Medium';
+  font-size: $title-h4;
+  font-weight: normal;
+  color: $title-color;
+}
+
+@mixin text-medium {
+  font-family: 'Barlow-Medium';
+  font-size: $regular;
+  font-weight: normal;
+  color: $text-color;
+}
+
+@mixin text-regular {
+  font-family: 'Barlow-Regular';
+  font-size: $regular;
+  font-weight: normal;
+  color: $text-color;
+}
+
+@mixin text-light {
+  font-family: 'Barlow-Light';
+  font-size: $regular;
+  font-weight: normal;
+  color: $text-color;
+}
+
+@mixin text-italic {
+  font-family: 'Barlow-Italic';
+  font-size: $regular;
+  font-weight: normal;
+  color: $white;
+}

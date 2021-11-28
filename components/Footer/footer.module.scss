@@ -1,0 +1,92 @@
+@import "../../styles/_mixins-text.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/_variables.scss";
+
+.footer{
+  background-color: $secondary-color;
+  margin-top: $margin-lg;
+  padding: 25px 0 50px 0;
+
+  @media screen and (min-width: $screen-md) {
+    margin-top: 80px;
+  }
+
+  h4{
+    position: relative;
+    @include title-h2();
+    color: $white;
+    margin: 0 0 $margin-md 0;
+
+    @media screen and (min-width: 530px) {
+      margin: 0 0 $margin-xl 0;
+    }
+
+    &:after{
+      @include line("medium");
+      top: -10px;
+      left: 0px;
+      height: 5px;
+      transform: translate(-60%,50%) rotate(-45deg);
+    }
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+
+    @media screen and (min-width: 530px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .contact{
+
+      span{
+        display: flex;
+        color: $white;
+
+        &:not(:first-child){
+          margin: $margin-md 0 0 0;
+        }
+
+        @media screen and (min-width: $screen-md) {
+          display: inline-flex;
+
+          &:not(:first-child){
+            margin: 0 0 0 $margin-xl;
+          }
+
+        }
+
+        svg{
+          margin-right: $margin-sm;
+        }
+      }
+
+      p{
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        @include text-regular;
+        color: $white;
+        &:after{
+          @include line("xs");
+          bottom: 0px;
+          right: -10px;
+          height: 4px;
+          transform: translate(60%,50%) rotate(-45deg);
+        }
+      }
+    }
+
+    button{
+      margin-bottom: $margin-lg;
+      @media screen and (min-width: 530px) {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+}

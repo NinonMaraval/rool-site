@@ -1,0 +1,241 @@
+@import "../../styles/mixins-text";
+@import "../../styles/_variables.scss";
+
+.imageFixed {
+  display: block;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+.header {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 60px;
+  background-color: $white;
+  
+
+  @media screen and (min-width: 1350px) {
+    min-height: 90px;
+    border-bottom: solid 1px #ECEEF1;
+  }
+
+  &.open {
+    ul {
+      max-height: 332px;
+      border-bottom: solid 1px #ECEEF1;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    top: 0;
+    width: 100%;
+
+    @media screen and (min-width: 1350px) {
+      min-height: 90px;
+      position: absolute;
+    }
+
+    .logo {
+      margin-left: $margin-md;
+      transform: translateY(2px);
+      @media screen and (min-width: 1350px) {
+        margin-left: $margin-lg;
+      }
+    }
+
+    .burger {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 27px;
+      margin-right: $margin-md;
+      cursor: pointer;
+      
+      @media screen and (min-width: 1350px) {
+        display: none;
+      }
+
+      &:after,
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30px;
+        height: 3px;
+        background-color: $secondary-color;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+      }
+
+      &.open {
+        &:after {
+          transform: translate(-50%, -50%) rotate(45deg);
+          opacity: 1;
+        }
+        &:before {
+          transform: translate(-50%, -50%) rotate(-45deg);
+          opacity: 1;
+        }
+        > div {
+          opacity: 0;
+        }
+      }
+
+      > div {
+        width: 40px;
+        height: 3px;
+        background-color: $secondary-color;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    .button {
+      display: none;
+      margin-right: $margin-md;
+
+      @media screen and (min-width: 1350px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      > a {
+        margin-right: $margin-md;
+      }
+
+    }
+  }
+
+  ul {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    padding: 0 $margin-md;
+    margin: 0 0 0 0;
+    border-top: solid 1px #ECEEF1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (min-width: 1350px) {
+      min-height: 90px;
+      padding: 0;
+      border-top: none;
+      width: auto;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .contact {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      @media screen and (min-width: $screen-sm) and (max-width: 1350px) {
+        justify-content: center;
+      }
+
+      @media screen and (min-width: 1350px) {
+        display: none;
+      }
+      > a {
+        margin-right: $margin-md;
+      }
+    }
+
+    li {
+      display: block;
+      text-align: center;
+      @include text-medium;
+      font-size: $medium;
+      text-transform: uppercase;
+      list-style: none;
+      text-align: left;
+
+      @media screen and (min-width: $screen-sm) and (max-width: 1350px) {
+        text-align: center;
+      }
+
+      @media screen and (min-width: 1350px) {
+        padding: 15px;
+        font-size: $regular;
+      }
+      @media screen and (min-width: 1470px) {
+        padding: $margin-md;
+        font-size: $medium;
+      }
+
+      @media screen and (max-width: 1350px) {
+        &:first-child {
+          margin-top: $margin-sm;
+        }
+
+        &:last-child {
+          margin-bottom: $margin-md;
+        }
+      }
+
+      &:not(.contact) a {
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        padding: $margin-sm 0;
+
+        @media screen and (min-width: 1350px) {
+          padding: 0;
+        }
+
+        &.actived:after,
+        &:hover:after {
+          width: 80%;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: 70%;
+          left: 0;
+          transform: translate(-4%, -60%);
+          display: block;
+          height: 15px;
+          width: 0%;
+          background-color: $primary-color;
+          transition: all 0.2s ease-in-out;
+
+          @media screen and (min-width: 1350px) {
+            transform: translate(-4%, -35%);
+          }
+
+          @media screen and (min-width: 1470px) {
+            transform: translate(-4%, -50%);
+          }
+
+        }
+      }
+    }
+  }
+}

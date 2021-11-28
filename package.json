@@ -1,0 +1,32 @@
+{
+  "name": "projet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3038",
+    "lint": "next lint",
+    "export": "next export"
+  },
+  "dependencies": {
+    "d3-scale": "^4.0.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "lodash": "^4.17.21",
+    "next": "11.1.2",
+    "next-compose-plugins": "^2.2.1",
+    "next-translate": "^1.0.7",
+    "next-transpile-modules": "^8.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-flagkit": "^2.0.4",
+    "react-icons": "^4.2.0",
+    "react-spring": "^9.2.4",
+    "react-visibility-sensor": "^5.1.1",
+    "sass": "^1.40.1"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2"
+  }
+}
